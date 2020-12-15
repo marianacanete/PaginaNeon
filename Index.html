@@ -11,15 +11,41 @@
 <body>
 	<header class="contHeader" id="contHeader">
 		<div class="textHeader">
-			
-		</div>
-		
+			<p class="icon">
+				<i class="fas fa-gamepad"></i>
+			</p>
+			<h1 class="title"> Just Play <br> ¡Entra! <br>
+			<span class="secondTitle regularText">Videogames & Funstuff</span>
+			</h1>
+			<p class="description">
+				Lorem ipsum, dolor sit <br> 
+				amet consectetur adipisicing elit. Earum <br>
+				ratione. Dolorum architecto 
+			</p>
+			<a href="#" class="btn-link regularText">Ingrese a la página</a>
+		</div>	
 	</header>
 
 	<main>
-		
+		<section class="container">
+			<h2 class="subtitle-H2">Servicios</h2>
+			<p><span class="capital-Letter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quidem, voluptatem at debitis iusto, necessitatibus exercitationem cupiditate deleniti veniam. Vitae eligendi laborum ducimus eos quasi consectetur expedita delectus doloremque velit!
+			</p>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, id tempore quia minus porro, odio eaque incidunt dolor quisquam, vitae saepe accusantium esse? Nemo eaque tempore, ullam aut, velit sint?
+			</p>
+
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi voluptatibus possimus provident cupiditate dolores quibusdam neque dolorem unde blanditiis, cum ut eaque, eius. Quas, non necessitatibus modi, quidem voluptates et.</p>
+		</section>
 	</main>
 	
 	<script src="https://kit.fontawesome.com/c263c16c4e.js"></script>
+
+	<script>
+		window.addEventListener('scroll', () => {
+			const header = document.getElementById ('contHeader');
+			header.style.opacity = '1' - window.pageYOffset / 650;
+		});
+	</script>
 </body>
 </html>
